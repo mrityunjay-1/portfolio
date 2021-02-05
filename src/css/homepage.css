@@ -1,0 +1,26 @@
+.homepage-main-div{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.homepage-main-div-child-1{
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-main-div-child-2{
+  width: 20%;
+}
+
+@media(max-width: 76rem){
+  .homepage-main-div-child-1{
+    width: 100%;
+  }
+  .homepage-main-div-child-2{
+    display: none;
+  }
+}

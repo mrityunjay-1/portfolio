@@ -1,0 +1,82 @@
+html{
+  font-size: 62.5%;
+}
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: 'helvetica';
+  background: url('../images/main-background-img.jpg') fixed no-repeat center;
+  background-size: cover;
+}
+
+.class-app-main-div{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
+.class-app-main-div-child-1{
+  width: 15%;
+  background-color: rgba(0, 255, 157, 0.486);
+  font-size: 1.6rem;
+  padding: 5% 0%;
+}
+
+/********** side-nav  **************/
+.side-nav{
+  transition: all 0.3s linear;
+  width: 80%;
+  box-shadow: 0.1rem 0.1rem 0.3rem green;
+  margin: 5% 0%;
+  padding: 5% 6%;
+  background-color: green;
+  border-radius: 0rem 1.2rem 1.2rem 0rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-nav:hover{
+  width: 90%;
+}
+
+
+.nav-link{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.class-app-main-div-child-2{
+  width: 85%;
+  overflow-y: scroll;
+}
+
+.class-app-main-div-child-2::-webkit-scrollbar{
+  width: 10px;
+}
+.class-app-main-div-child-2::-webkit-scrollbar-thumb{
+  background-color: cyan;
+}
+.class-app-main-div-child-2::-webkit-scrollbar-track{
+  background-color: grey;
+}
+
+
+
+@media(max-width: 76rem){
+  html{
+    font-size: 40%;
+  }
+  .side-nav div:nth-child(2){
+    display: none;
+  }
+  .class-app-main-div-child-1{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
