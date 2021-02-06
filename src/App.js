@@ -70,7 +70,7 @@ const App = () => {
         <div className="class-app-main-div-child-2">
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/portfolio" components={HomePage} />
+            <Route exact path="/portfolio" component={HomePage} />
             <Route exact path="/*" component={Page404} />
           </Switch>
         </div>
