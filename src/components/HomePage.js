@@ -1,19 +1,36 @@
 import React from 'react';
 import lovelyplant from "../images/lovely-plant.png";
-import myimage from '../images/my_profie_img.png';
+import myimage from '../images/my_profie_img.jpg';
 import '../css/homepage.css';
+import ListAltIcon from '@material-ui/icons/ListAlt';
 
 const HomePage = () => {
+
+  const get_my_resume = () => {
+    alert("hand tight!");
+  }
+
+
+
+
   return (
     <>
       <div className="homepage-main-div">
         <div className="homepage-main-div-child-1">
-          <div>
-            <img src={myimage} style={{ width: 'auto', filter: "drop-shadow(3px 3px 10px grey)" }} /> <br />
+
+          <div style={{ display: 'grid', placeItems: 'center' }}>
+            <img src={myimage} style={{ borderRadius: '4rem', width: '70%', filter: "drop-shadow(3px 3px 10px grey)" }} /> <br />
           </div>
-          <div style={{ padding: "6% 1%" }}>
-            <h1 style={{ border: '0.6rem solid blue', boxShadow: '0.2rem 0.2rem 0.5rem grey', backgroundColor: 'white', padding: '3%', borderRadius: '2rem', fontSize: '4rem', textShadow: '0.2rem 0.2rem 0.5rem grey', textAlign: 'center' }}> Mrityunjay Kumar </h1>
-            <p style={{ color: 'blue', textAlign: 'center', fontSize: '2.5rem' }}> Making Online presence through websites </p>
+
+          <div className="homepage-main-div-child-1-child-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'column', paddingTop: '2%' }}>
+            <div style={{ minWidth: '38rem', padding: '4%', borderLeft: '1rem solid blue', borderRadius: '0.5rem', backgroundColor: 'rgba(0, 0, 0, 0.6' }}>
+              <h1 style={{ color: 'white', fontSize: '4rem' }}> Mrityunjay Kumar </h1>
+              <p style={{ color: 'white', fontSize: '1.4rem' }}> Making online presence through websites </p>
+            </div>
+
+            <div style={{ padding: '4%', display: 'grid', placeItems: 'center' }}>
+              <button className="resume-button" onClick={get_my_resume}> <span> My Resume </span> <span>&nbsp; <ListAltIcon fontSize="large" />  </span></button>
+            </div>
           </div>
         </div>
         <div className="homepage-main-div-child-2">

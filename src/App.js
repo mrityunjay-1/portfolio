@@ -4,7 +4,10 @@ import HomePage from './components/HomePage';
 import Page404 from './components/Page404';
 import './css/index.css';
 import HomeIcon from '@material-ui/icons/Home';
-
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import ListAltIcon from '@material-ui/icons/ListAlt';
+import DateRangeOutlinedIcon from '@material-ui/icons/DateRangeOutlined';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const App = () => {
   const [sideBar, setSideBar] = useState("jeevan");
@@ -15,26 +18,36 @@ const App = () => {
         {/* DIV - 1 Side Bar */}
 
         <div className="class-app-main-div-child-1">
-          <div className="side-nav">
-            <div> <HomeIcon className="icons" /> </div>
-            <div> <NavLink to="/" className="nav-link"> Home </NavLink> </div>
-          </div>
-          <div className="side-nav">
-            <div> <HomeIcon className="icons" /> </div>
-            <div> <NavLink to="/" className="nav-link"> Home </NavLink> </div>
-          </div>
-          <div className="side-nav">
-            <div> <HomeIcon className="icons" /> </div>
-            <div> <NavLink to="/" className="nav-link"> Home </NavLink> </div>
-          </div>
-          <div className="side-nav">
-            <div> <HomeIcon className="icons" /> </div>
-            <div> <NavLink to="/" className="nav-link"> Home </NavLink> </div>
-          </div>
-          <div className="side-nav">
-            <div> <HomeIcon className="icons" /> </div>
-            <div> <NavLink to="/" className="nav-link"> Home </NavLink> </div>
-          </div>
+          <NavLink to="/" className="nav-link">
+            <div className="side-nav">
+              <div> <HomeIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
+              <div> <span className="nav-link"> Home </span> </div>
+            </div>
+          </NavLink>
+          <NavLink to="/skills" className="nav-link">
+            <div className="side-nav">
+              <div> <DateRangeOutlinedIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
+              <div> <span className="nav-link"> Skills </span> </div>
+            </div>
+          </NavLink>
+          <NavLink to="/projects" className="nav-link">
+            <div className="side-nav">
+              <div> <ListAltIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
+              <div> <span className="nav-link"> My Projects </span> </div>
+            </div>
+          </NavLink>
+          <NavLink to="/emailme" className="nav-link">
+            <div className="side-nav">
+              <div> <ContactMailIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
+              <div> <span className="nav-link"> Email me </span> </div>
+            </div>
+          </NavLink>
+          <NavLink to="/contact" className="nav-link">
+            <div className="side-nav">
+              <div> <ContactMailIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
+              <div> <span className="nav-link"> Contact me </span> </div>
+            </div>
+          </NavLink>
         </div>
 
         {/* DIV - 2 main workspace */}
@@ -59,7 +72,7 @@ const App = () => {
           setSideBar("jeevan");
         }
       }
-      }> &#9776; </div>
+      }> <MenuIcon style={{ fontSize: '5rem', border: '0.1rem solid black', backgroundColor: 'white', borderRadius: '0.5rem' }} /> </div>
 
     </>
   );

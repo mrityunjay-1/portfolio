@@ -25,7 +25,8 @@ body {
 .class-app-main-div-child-1{
   transition: all 0.1s linear;
   width: 15%;
-  background-color: rgba(0, 255, 157, 0.486);
+  height: 100vh;
+  background-color: rgb(168, 59, 9);
   font-size: 1.6rem;
   padding: 5% 0%;
 }
@@ -37,7 +38,7 @@ body {
   box-shadow: 0.1rem 0.1rem 0.3rem green;
   margin: 5% 0%;
   padding: 5% 6%;
-  background-color: green;
+  background-color: lightblue;
   border-radius: 0rem 1.2rem 1.2rem 0rem; 
   display: flex;
   justify-content: space-between;
@@ -47,21 +48,13 @@ body {
   width: 90%;
 }
 
-.icons{
-  color: white;
-}
 
 
 
 .nav-link{
   font-weight: bold;
   text-decoration: none;
-  color: white;
 }
-
-
-
-
 
 
 
@@ -70,7 +63,7 @@ body {
   overflow-y: scroll;
 }
 
-.class-app-main-div-child-2::-webkit-scrollbar{
+/* .class-app-main-div-child-2::-webkit-scrollbar{
   width: 10px;
 }
 .class-app-main-div-child-2::-webkit-scrollbar-thumb{
@@ -78,7 +71,7 @@ body {
 }
 .class-app-main-div-child-2::-webkit-scrollbar-track{
   background-color: grey;
-}
+} */
 
 
 
@@ -108,5 +101,9 @@ body {
   
   .active{
     display: flex;
+  }
+  
+  .nav-link{
+    font-size: 2rem; 
   }
 }
