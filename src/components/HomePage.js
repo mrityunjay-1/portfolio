@@ -1,17 +1,15 @@
 import React from 'react';
+import HamarBihar from '../outside-components/HamarBihar';
 import lovelyplant from "../images/lovely-plant.png";
 import myimage from '../images/my_profie_img.jpg';
 import '../css/homepage.css';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-import MyProjects from './MyProjects';
 import cv from './cv-mrityunjay-kumar.pdf';
 import axios from 'axios';
 
 const HomePage = () => {
 
   const get_my_resume = () => {
-
-
     try {
       axios.get(cv, { responseType: 'blob' })
         .then(res => {
@@ -25,8 +23,6 @@ const HomePage = () => {
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
-
-
 
         });
     } catch (e) {
@@ -55,10 +51,19 @@ const HomePage = () => {
               <button className="resume-button" onClick={get_my_resume}> <span> My Resume </span> <span>&nbsp; <ListAltIcon fontSize="large" />  </span></button>
             </div>
           </div>
+
+          {/* Hamar Bihar Section */}
+          <div className="hamar-bihar">
+            <HamarBihar />
+          </div>
+
+
         </div>
         <div className="homepage-main-div-child-2">
           <img src={lovelyplant} style={{ filter: "drop-shadow(15px 0px 10px grey)", width: '100%', height: '100%' }} />
         </div>
+
+
       </div>
 
     </>

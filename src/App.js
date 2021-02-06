@@ -69,8 +69,8 @@ const App = () => {
 
         <div className="class-app-main-div-child-2">
           <Switch>
+            <Route path="/" component={HomePage} />
             <Route exact path="/portfolio" components={HomePage} />
-            <Route exact path="/" component={HomePage} />
             <Route exact path="/*" component={Page404} />
           </Switch>
         </div>
@@ -88,7 +88,7 @@ const App = () => {
           setSideBar("jeevan");
         }
       }
-      }> <MenuIcon style={{ fontSize: '5rem', border: '0.1rem solid black', backgroundColor: 'white', borderRadius: '0.5rem' }} /> </div>
+      }> <MenuIcon style={{ fontSize: '4rem', border: '0.1rem solid black', backgroundColor: 'white', borderRadius: '0.5rem' }} /> </div>
 
     </>
   );
