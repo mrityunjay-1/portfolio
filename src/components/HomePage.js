@@ -23,7 +23,7 @@ const HomePage = () => {
           </div>
 
           <div className="homepage-main-div-child-1-child-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'column', paddingTop: '2%' }}>
-            <div style={{ minWidth: '38rem', padding: '4%', borderLeft: '1rem solid blue', borderRadius: '0.5rem', backgroundColor: 'rgba(0, 0, 0, 0.6' }}>
+            <div style={{ minWidth: '38rem', padding: '4%', borderLeft: '1rem solid brown', borderRadius: '0.5rem', backgroundColor: 'rgba(0, 0, 0, 0.6' }}>
               <h1 style={{ color: 'white', fontSize: '4rem' }}> Mrityunjay Kumar </h1>
               <p style={{ color: 'white', fontSize: '1.4rem' }}> Making online presence through websites </p>
             </div>
