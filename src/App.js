@@ -12,37 +12,52 @@ import MenuIcon from '@material-ui/icons/Menu';
 const App = () => {
   const [sideBar, setSideBar] = useState("jeevan");
 
+  function hide() {
+    document.querySelector(".class-app-main-div-child-1").classList.remove("active");
+    setSideBar("jeevan");
+  }
+
   return (
     <>
       <div className="class-app-main-div">
         {/* DIV - 1 Side Bar */}
 
         <div className="class-app-main-div-child-1">
-          <NavLink to="/" className="nav-link">
+
+          {/* Nav - 1 For Homepage */}
+          <NavLink to="/" className="nav-link" onClick={hide} >
             <div className="side-nav">
               <div> <HomeIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
               <div> <span className="nav-link"> Home </span> </div>
             </div>
           </NavLink>
-          <NavLink to="/skills" className="nav-link">
+
+          {/* Nav - 2 For skills */}
+          <NavLink to="/skills" className="nav-link" onClick={hide} >
             <div className="side-nav">
               <div> <DateRangeOutlinedIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
               <div> <span className="nav-link"> Skills </span> </div>
             </div>
           </NavLink>
-          <NavLink to="/projects" className="nav-link">
+
+          {/* Nav - 3 For projects */}
+          <NavLink to="/projects" className="nav-link" onClick={hide} >
             <div className="side-nav">
               <div> <ListAltIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
               <div> <span className="nav-link"> My Projects </span> </div>
             </div>
           </NavLink>
-          <NavLink to="/emailme" className="nav-link">
+
+          {/* Nav - 4 For email */}
+          <NavLink to="/emailme" className="nav-link" onClick={hide} >
             <div className="side-nav">
               <div> <ContactMailIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
               <div> <span className="nav-link"> Email me </span> </div>
             </div>
           </NavLink>
-          <NavLink to="/contact" className="nav-link">
+
+          {/* Nav - 5 For contact */}
+          <NavLink to="/contact" className="nav-link" onClick={hide} >
             <div className="side-nav">
               <div> <ContactMailIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
               <div> <span className="nav-link"> Contact me </span> </div>
@@ -54,8 +69,8 @@ const App = () => {
 
         <div className="class-app-main-div-child-2">
           <Switch>
+            <Route exact path="/portfolio" components={HomePage} />
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/portfolio" component={HomePage} />
             <Route exact path="/*" component={Page404} />
           </Switch>
         </div>

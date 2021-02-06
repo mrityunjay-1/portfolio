@@ -6,7 +6,7 @@ html{
 }
 body {
   font-family: 'helvetica';
-  background: url('../images/side-nav.jpg') fixed no-repeat center;
+  background: url('../images/main-background-img.jpg') fixed no-repeat center;
   background-size: cover;
 }
 
@@ -26,10 +26,19 @@ body {
   transition: all 0.1s linear;
   width: 15%;
   height: 100vh;
-  /* background-color: rgb(168, 59, 9); */
-  background-image: url("../images/main-background-img.jpg");
+  background-color: rgb(168, 59, 9);
   font-size: 1.6rem;
   padding: 5% 0%;
+  animation: anim 0.5s linear;
+}
+
+@keyframes anim{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 /********** side-nav  **************/

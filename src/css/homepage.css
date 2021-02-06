@@ -19,9 +19,9 @@
 .homepage-main-div-child-1-child-2 div:nth-child(1)::before{
   content: '';
   position: absolute;
-  top: 2%;
+  top: 0%;
   left: 50%; right: 0%; bottom: 0%;
-  background-color: brown;
+  background-color: lightblue;
   height: 1rem;
   width: 53%;
   border-radius: 0rem 0.5rem 0rem 0rem; 
@@ -29,14 +29,37 @@
 .homepage-main-div-child-1-child-2 div:nth-child(1)::after{
   content: '';
   position: absolute;
-  top: 2%;
+  top: 0%;
   left: 102%; right: 0%; bottom: 0%;
-  background-color: brown;
+  background-color: lightblue;
   height: 1rem;
   width: 2.5%;
   height: 40%;
   border-radius: 0rem 1rem 0rem 0rem; 
   
+}
+
+.homepage-main-div-child-1-child-2 div:nth-child(2)::before{
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: -5%; right: 50%; top: 100%;
+  background-color: lightblue;
+  height: 1rem;
+  width: 55%;
+  border-radius: 0rem 0rem 0rem 1rem; 
+  
+}
+.homepage-main-div-child-1-child-2 div:nth-child(2)::after{
+  content: '';
+  position: absolute;
+  top: 62%;
+  left: -5%; right: 0%; bottom: 0%;
+  background-color: lightblue;
+  height: 1rem;
+  width: 2.5%;
+  height: 40%; 
+  border-radius: 0rem 0rem 0rem 0.5rem; 
 }
 
 
@@ -76,6 +99,12 @@
     display: none;
   }
   .homepage-main-div-child-1-child-2 div:nth-child(1)::before{
+    display: none;
+  }
+  .homepage-main-div-child-1-child-2 div:nth-child(2)::after{
+    display: none;
+  }
+  .homepage-main-div-child-1-child-2 div:nth-child(2)::before{
     display: none;
   }
 }

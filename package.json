@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio-site",
-  "homepage":"https://mrityunjay-1.github.io/portfolio",
+  "homepage": "https://mrityunjay-1.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -16,7 +17,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-   "predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
