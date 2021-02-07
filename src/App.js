@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Switch, NavLink, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import MySkills from './components/MySkills';
 import Page404 from './components/Page404';
 import './css/index.css';
 import HomeIcon from '@material-ui/icons/Home';
@@ -71,6 +72,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/portfolio" component={HomePage} />
+            <Route exact path="/skills" component={MySkills} />
             <Route exact path="/*" component={Page404} />
           </Switch>
         </div>

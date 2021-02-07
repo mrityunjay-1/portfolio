@@ -14,7 +14,7 @@ const HomePage = () => {
       axios.get(cv, { responseType: 'blob' })
         .then(res => {
           // console.log(res);
-          const url = window.URL.createObjectURL(new Blob([res.data], { type: "application/octetstream" }));
+          const url = window.URL.createObjectURL(new Blob([res.data], { type: "application/pdf" }));
 
           let a = document.createElement("a");
           a.setAttribute("href", url);
@@ -37,25 +37,25 @@ const HomePage = () => {
         <div className="homepage-main-div-child-1">
 
           <div style={{ display: 'grid', placeItems: 'center', padding: '4%' }}>
-            <img src={myimage} style={{ borderRadius: '4rem', width: '70%', filter: "drop-shadow(3px 3px 10px grey)" }} /> <br />
+            <img src={myimage} style={{ borderRadius: '8rem', width: '70%', filter: "drop-shadow(3px 3px 10px grey)" }} /> <br />
           </div>
 
           <div className="homepage-main-div-child-1-child-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'column', paddingTop: '2%' }}>
-            <div style={{ minWidth: '38rem', padding: '4%', borderLeft: '1rem solid blue', borderRadius: '0.5rem', backgroundColor: 'rgba(0, 0, 0, 0.6' }}>
+            <div style={{ minWidth: '38rem', padding: '4%', borderLeft: '0.5rem solid blue', borderRadius: '0.5rem', backgroundColor: 'rgba(0, 0, 0, 0.6' }}>
               <h1 style={{ color: 'white', fontSize: '4rem' }}> Mrityunjay Kumar </h1>
-              <p style={{ color: 'white', fontSize: '1.4rem' }}> Making online presence through websites </p>
+              {/* <p style={{ color: 'white', fontSize: '1.4rem' }}> Making online presence through websites </p> */}
             </div>
             <div></div>
 
             <div style={{ padding: '4%', display: 'grid', placeItems: 'center' }}>
-              <button className="resume-button" onClick={get_my_resume}> <span> My Resume </span> <span>&nbsp; <ListAltIcon fontSize="large" />  </span></button>
+              <button className="resume-button" onClick={get_my_resume}> <span> Resume </span> <span>&nbsp; <ListAltIcon fontSize="large" />  </span></button>
             </div>
           </div>
 
           {/* Hamar Bihar Section */}
-          <div className="hamar-bihar">
+          {/* <div className="hamar-bihar">
             <HamarBihar />
-          </div>
+          </div> */}
 
 
         </div>

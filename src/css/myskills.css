@@ -1,0 +1,58 @@
+.myskills-main-div{
+  padding: 3%;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+}
+.myskills-main-div-header{
+  width: 100%;
+  padding: 1.5%;
+  color: brown;
+  font-weight: bold;
+  /* text-shadow: 0.1rem 0.1rem 0.5rem grey; */
+  font-size: 1.4rem;
+}
+.myskills-main-div-body{
+  display: flex;
+  flex-flow: column;
+  padding: 2% 0%;
+}
+.myskills-main-div-body > div{
+  padding: 1% 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.my-education{
+  font-size: 1.8rem;
+  display: flex;
+  width: 100%;
+}
+.my-education > div{
+  margin: 1% 1%;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 2%;
+}
+.class-x{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: cyan; */
+}
+
+@media(max-width: 760px){
+  .myskills-main-div{
+    padding: 15% 5% 5% 5%;
+  }
+  .myskills-main-div-header{
+    padding: 3%;
+  }
+  .my-education{
+    flex-flow: column;
+  }
+}
