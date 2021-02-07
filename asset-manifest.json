@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.538a11c4.chunk.css",
-    "main.js": "/portfolio/static/js/main.ad1d1c26.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ad1d1c26.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7bcaee50.chunk.css",
+    "main.js": "/portfolio/static/js/main.d4154424.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d4154424.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.aad9c327.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.aad9c327.js.map",
-    "static/js/2.dfd7b26f.chunk.js": "/portfolio/static/js/2.dfd7b26f.chunk.js",
-    "static/js/2.dfd7b26f.chunk.js.map": "/portfolio/static/js/2.dfd7b26f.chunk.js.map",
+    "static/js/2.828821ab.chunk.js": "/portfolio/static/js/2.828821ab.chunk.js",
+    "static/js/2.828821ab.chunk.js.map": "/portfolio/static/js/2.828821ab.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.538a11c4.chunk.css.map": "/portfolio/static/css/main.538a11c4.chunk.css.map",
-    "static/js/2.dfd7b26f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dfd7b26f.chunk.js.LICENSE.txt",
+    "static/css/main.7bcaee50.chunk.css.map": "/portfolio/static/css/main.7bcaee50.chunk.css.map",
+    "static/js/2.828821ab.chunk.js.LICENSE.txt": "/portfolio/static/js/2.828821ab.chunk.js.LICENSE.txt",
     "static/media/cv-mrityunjay-kumar.6cb4beca.pdf": "/portfolio/static/media/cv-mrityunjay-kumar.6cb4beca.pdf",
-    "static/media/hamar-bihar-chhath-puja.3dc2f143.jpg": "/portfolio/static/media/hamar-bihar-chhath-puja.3dc2f143.jpg",
-    "static/media/hamar-bihar-madhubani-kala-chitrakari.7d06f487.jpg": "/portfolio/static/media/hamar-bihar-madhubani-kala-chitrakari.7d06f487.jpg",
-    "static/media/hamar-bihar-mahatma-gandhi-setu-pul.9d14481c.jpg": "/portfolio/static/media/hamar-bihar-mahatma-gandhi-setu-pul.9d14481c.jpg",
-    "static/media/hamar-bihar-nalanda-vishwavidyalaya.e0163bf6.jpg": "/portfolio/static/media/hamar-bihar-nalanda-vishwavidyalaya.e0163bf6.jpg",
-    "static/media/hamar-bihar-sonpur-pashu-mela.7199ef06.jpeg": "/portfolio/static/media/hamar-bihar-sonpur-pashu-mela.7199ef06.jpeg",
-    "static/media/hamar-bihar-vtr.7d7da26a.jpg": "/portfolio/static/media/hamar-bihar-vtr.7d7da26a.jpg",
-    "static/media/lovely-plant.cd2f6752.png": "/portfolio/static/media/lovely-plant.cd2f6752.png",
+    "static/media/lovely-plant.f6221860.png": "/portfolio/static/media/lovely-plant.f6221860.png",
     "static/media/index.css": "/portfolio/static/media/main-background-img.fa0d1b40.jpg",
     "static/media/my_profie_img.3f0379b4.jpg": "/portfolio/static/media/my_profie_img.3f0379b4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.aad9c327.js",
-    "static/js/2.dfd7b26f.chunk.js",
-    "static/css/main.538a11c4.chunk.css",
-    "static/js/main.ad1d1c26.chunk.js"
+    "static/js/2.828821ab.chunk.js",
+    "static/css/main.7bcaee50.chunk.css",
+    "static/js/main.d4154424.chunk.js"
   ]
 }
