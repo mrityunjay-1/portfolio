@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/myskills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap, faSchool, faUniversity } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faCss3Alt, faReact, faJsSquare, faNodeJs, faPhp, faLaravel } from '@fortawesome/free-brands-svg-icons';
 
 // my skills - json data
@@ -40,17 +40,20 @@ const my_skills = [
 // my education - json data
 const my_education = [
   {
-    class: "class - X",
-    percentage: "76.8%",
+    icon: faSchool,
+    class: "Matriculation",
+    percentage: "Percentage - 76.8%",
     school: "NBS Mills High School, Bagaha - Bihar",
     year: 2015
   }, {
-    class: "class - XII",
-    percentage: "75.4%",
+    icon: faSchool,
+    class: "Intermidiate in Science",
+    percentage: "Percentage - 75.4%",
     school: "Munshi Singh College, Motihari - Bihar",
     year: 2017
   }, {
-    class: "B.Tech. Computer Science & Engineering",
+    icon: faUniversity,
+    class: "B.Tech. - (Computer Science & Engineering)",
     percentage: "CGPA - 7.52",
     school: "Lovely Professional University, Phagwara - Punjab",
     year: 2022
@@ -75,15 +78,14 @@ const MySkills = () => {
               my_skills.map((data) => {
                 return (
                   <>
-                    <div>
-                      <div style={{ width: '45%', fontSize: '2.2rem' }}>
-                        <FontAwesomeIcon icon={data.icon1} /> <span> {data.skill1} </span> <span style={{ float: "right", fontSize: '1.5rem', color: 'grey' }}> {data.value1}% </span>
-                        <br /> <meter min="0" max="100" value={data.value1} style={{ width: "100%" }} ></meter>
+                    <div class="skills-div">
+                      <div style={{ fontSize: '2rem' }}>
+                        <FontAwesomeIcon icon={data.icon1} /> <span> {data.skill1} </span> <span style={{ float: "right", fontSize: '1.4rem', color: 'grey' }}> {data.value1}% </span>
+                        <br /> <div style={{ width: '100%', height: '1rem', border: '0.1rem solid grey', borderRadius: '2rem' }} > <div style={{ width: `${data.value1}%`, height: '100%', backgroundColor: 'green' }}></div> </div>
                       </div>
-                      <div style={{ width: '45%', fontSize: '2.2rem' }}>
-                        <FontAwesomeIcon icon={data.icon2} /> <span> {data.skill2} </span> <span style={{ float: "right", fontSize: '1.5rem', color: 'grey' }}> {data.value1}% </span>
-                        <br /> <meter min="0" max="100" value={data.value2} style={{ width: "100%" }} ></meter>
-                      </div>
+                      <div style={{ fontSize: '2.2rem' }}>
+                        <FontAwesomeIcon icon={data.icon2} /> <span> {data.skill2} </span> <span style={{ float: "right", fontSize: '1.4rem', color: 'grey' }}> {data.value1}% </span>
+                        <br /> <div style={{ width: '100%', height: '1rem', border: '0.1rem solid grey', borderRadius: '2rem' }} > <div style={{ width: `${data.value2}%`, height: '100%', backgroundColor: 'green' }}></div> </div></div>
                     </div>
                   </>
                 );
@@ -91,14 +93,14 @@ const MySkills = () => {
             }
 
 
-            <div style={{ width: '100%', display: 'flex', flexFlow: 'column', paddingTop: '4%' }}>
+            <div style={{ width: '100%', display: 'flex', flexFlow: 'column', padding: '7% 0%' }}>
               {/* My Education Heading */}
 
               <div style={{ width: '100%', fontSize: '1.4em' }}>
                 <h1 style={{ textAlign: 'center', color: 'brown' }}><FontAwesomeIcon icon={faGraduationCap} /> My Education </h1>
               </div>
 
-              <hr style={{ margin: '1% 0%' }} />
+              <hr style={{ margin: '1% 0%' }} /> <br /><br />
               {/* My Education Body */}
 
               <div className="my-education">
@@ -106,14 +108,15 @@ const MySkills = () => {
                   my_education.map((data) => {
                     return (
                       <>
-                        <div className="class-x">
-                          <div>
-                            <span style={{ fontSize: '2rem' }}> {data.class} </span> <br /> <br />
-                            <span style={{ fontSize: '1.4rem', color: 'grey' }}> {data.school} </span>
+                        <div>
+                          <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', paddingTop: '2%' }}>
+                            <span style={{ border: '0.3rem solid blue', padding: '3%', color: 'white', backgroundColor: 'brown', borderRadius: '6rem', fontSize: '2.5rem' }}> <FontAwesomeIcon icon={data.icon} /> </span> <br />
+                            <span style={{ textShadow: '0.1rem 0.1rem 0.3rem lightgrey', fontSize: '2.2rem', fontWeight: 'bold', color: 'brown', textAlign: 'center' }}> {data.class} </span> <br />
+                            <span style={{ textAlign: 'center', fontSize: '1.4rem', color: 'lightgrey' }}> {data.school} </span> <br />
                           </div>
-                          <div>
-                            <span style={{ fontSize: '2rem' }}> {data.percentage} </span> <br /> <br />
-                            <span style={{ fontSize: '1.4rem', color: 'grey' }}> {data.year} </span>
+                          <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center' }}>
+                            <span> {data.percentage} </span> <br />
+                            <span style={{ fontSize: '1rem', color: 'grey' }}> {data.year} </span>
                           </div>
                         </div>
                       </>

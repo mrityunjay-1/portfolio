@@ -7,8 +7,23 @@ html{
 }
 body {
   font-family: 'helvetica';
-  background: url('../images/main-background-img.jpg') fixed no-repeat center;
-  background-size: cover;
+  /* background: url('../images/main-background-img.jpg') fixed no-repeat center;
+  background-size: cover; */
+}
+
+.my-svg{
+  z-index: -9999999999;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+  clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%, 85% 50%);
+}
+.my-svg2{
+  z-index: -9999999999;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
 .hamburger{
@@ -101,7 +116,14 @@ body {
 
 
 
-@media(max-width: 76rem){
+@media(max-width: 500px){
+  .my-svg{
+    clip-path: polygon(100% 70%, 100% 100%, 0% 100%, 20% 80%);
+  }
+  .my-svg2{
+    background-color: brown;
+    clip-path: polygon(0% 0%, 80% 0%, 15% 20%, 0% 30%);
+  }
   html{
     font-size: 50%;
   }
@@ -116,7 +138,42 @@ body {
   .class-app-main-div-child-1{
     position: absolute;
     top: 0%; right: 0; bottom: 0; left: 0;
-    width: 80%;
+    width: 100%;
+    padding: 20% 0%;
+    z-index: 99999;
+    display: none;
+    flex-flow: column;
+  }
+  
+  .class-app-main-div-child-2{
+    width: 100%;
+  }
+  
+  .active{
+    display: flex;
+  }
+  
+  .nav-link{
+    font-size: 2rem; 
+  }
+}
+
+@media(max-width: 880px){
+  html{
+    font-size: 55%;
+  }
+  
+  .hamburger{
+    display: block;
+  }
+  .class-app-main-div-child-1 .times{
+    display: block;
+  }
+  
+  .class-app-main-div-child-1{
+    position: absolute;
+    top: 0%; right: 0; bottom: 0; left: 0;
+    width: 55%;
     padding: 20% 0%;
     z-index: 99999;
     display: none;

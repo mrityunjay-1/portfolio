@@ -49,6 +49,9 @@ const App = () => {
 
   return (
     <>
+      <div class="my-svg"></div>
+      <div class="my-svg2"></div>
+
       <div className="class-app-main-div">
         {/* DIV - 1 Side Bar */}
 
@@ -83,7 +86,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className="hamburger" onClick={hideShow}> <FontAwesomeIcon icon={faBars} style={{ fontSize: '4.2rem', border: '0.1rem solid black', borderRadius: '0.1rem', padding: '15%' }} /> </div>
+      <div className="hamburger" onClick={hideShow}> <FontAwesomeIcon icon={faBars} style={{ color: 'white', fontSize: '4.2rem', border: '0.1rem solid white', borderRadius: '0.1rem', padding: '15%' }} /> </div>
 
     </>
   );
