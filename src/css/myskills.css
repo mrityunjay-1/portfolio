@@ -37,12 +37,11 @@
   border: 1px solid grey;
   background-color: white;
   padding: 2%;
-}
-.class-x{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* background-color: cyan; */
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem grey;
 }
 
 @media(max-width: 760px){

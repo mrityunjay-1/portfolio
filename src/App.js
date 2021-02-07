@@ -4,19 +4,48 @@ import HomePage from './components/HomePage';
 import MySkills from './components/MySkills';
 import Page404 from './components/Page404';
 import './css/index.css';
-import HomeIcon from '@material-ui/icons/Home';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
-import ListAltIcon from '@material-ui/icons/ListAlt';
-import DateRangeOutlinedIcon from '@material-ui/icons/DateRangeOutlined';
-import MenuIcon from '@material-ui/icons/Menu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faCode, faProjectDiagram, faIdCard, faBars } from '@fortawesome/free-solid-svg-icons';
+
+const navLinks = [
+  {
+    icon: faHome,
+    to: ""
+  }, {
+    icon: faCode,
+    to: "skills"
+  }, {
+    icon: faProjectDiagram,
+    to: "projects"
+  }, {
+    icon: faIdCard,
+    to: "email"
+  }, {
+    icon: faIdCard,
+    to: "contact me"
+  },
+];
+
 
 const App = () => {
-  const [sideBar, setSideBar] = useState("jeevan");
+  // const [sideBar, setSideBar] = useState("jeevan");
 
-  function hide() {
-    document.querySelector(".class-app-main-div-child-1").classList.remove("active");
-    setSideBar("jeevan");
-  }
+  const hideShow = () => {
+    document.querySelector(".class-app-main-div-child-1").classList.toggle("active");
+    // if (sideBar == "jeevan") {
+    //   document.querySelector(".class-app-main-div-child-1").classList.add("active");
+    //   setSideBar("mrityu");
+    // }
+    // else {
+    //   document.querySelector(".class-app-main-div-child-1").classList.remove("active");
+    //   setSideBar("jeevan");
+    // }
+  };
+
+  // function hide() {
+  //   document.querySelector(".class-app-main-div-child-1").classList.remove("active");
+  //   // setSideBar("jeevan");
+  // }
 
   return (
     <>
@@ -24,46 +53,22 @@ const App = () => {
         {/* DIV - 1 Side Bar */}
 
         <div className="class-app-main-div-child-1">
+          {/* NavLinks from json data */}
 
-          {/* Nav - 1 For Homepage */}
-          <NavLink to="/" className="nav-link" onClick={hide} >
-            <div className="side-nav">
-              <div> <HomeIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
-              <div> <span className="nav-link"> Home </span> </div>
-            </div>
-          </NavLink>
+          {navLinks.map((data) => {
+            return (
+              <>
+                <NavLink to={`/${data.to}`} className="nav-link" onClick={hideShow} >
+                  <div className="side-nav">
+                    <div> <FontAwesomeIcon style={{ color: 'black', fontSize: '2rem' }} icon={data.icon} /> </div>
+                    <div> <span className="nav-link"> {data.to === "" ? "Home" : data.to} </span> </div>
+                  </div>
+                </NavLink>
+              </>
+            );
+          })}
 
-          {/* Nav - 2 For skills */}
-          <NavLink to="/skills" className="nav-link" onClick={hide} >
-            <div className="side-nav">
-              <div> <DateRangeOutlinedIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
-              <div> <span className="nav-link"> Skills </span> </div>
-            </div>
-          </NavLink>
-
-          {/* Nav - 3 For projects */}
-          <NavLink to="/projects" className="nav-link" onClick={hide} >
-            <div className="side-nav">
-              <div> <ListAltIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
-              <div> <span className="nav-link"> My Projects </span> </div>
-            </div>
-          </NavLink>
-
-          {/* Nav - 4 For email */}
-          <NavLink to="/emailme" className="nav-link" onClick={hide} >
-            <div className="side-nav">
-              <div> <ContactMailIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
-              <div> <span className="nav-link"> Email me </span> </div>
-            </div>
-          </NavLink>
-
-          {/* Nav - 5 For contact */}
-          <NavLink to="/contact" className="nav-link" onClick={hide} >
-            <div className="side-nav">
-              <div> <ContactMailIcon style={{ color: 'black', fontSize: '2.5rem' }} /> </div>
-              <div> <span className="nav-link"> Contact me </span> </div>
-            </div>
-          </NavLink>
+          <button onClick={hideShow} className="times"> &times; </button>
         </div>
 
         {/* DIV - 2 main workspace */}
@@ -76,21 +81,9 @@ const App = () => {
             <Route exact path="/*" component={Page404} />
           </Switch>
         </div>
-
-
-
       </div>
-      <div className="hamburger" onClick={() => {
-        if (sideBar == "jeevan") {
-          document.querySelector(".class-app-main-div-child-1").classList.add("active");
-          setSideBar("mrityu");
-        }
-        else {
-          document.querySelector(".class-app-main-div-child-1").classList.remove("active");
-          setSideBar("jeevan");
-        }
-      }
-      }> <MenuIcon style={{ fontSize: '4rem', border: '0.1rem solid black', backgroundColor: 'white', borderRadius: '0.5rem' }} /> </div>
+
+      <div className="hamburger" onClick={hideShow}> <FontAwesomeIcon icon={faBars} style={{ fontSize: '4.2rem', border: '0.1rem solid black', borderRadius: '0.1rem', padding: '15%' }} /> </div>
 
     </>
   );

@@ -1,11 +1,19 @@
 import React from 'react';
 import '../css/myskills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPython, faReact, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { faHtml5, faCss3Alt, faReact, faJsSquare, faNodeJs, faPhp, faLaravel } from '@fortawesome/free-brands-svg-icons';
 
 // my skills - json data
 const my_skills = [
   {
+    icon1: faHtml5,
+    skill1: "HTML",
+    value1: 70,
+    icon2: faCss3Alt,
+    skill2: "css",
+    value2: 70
+  }, {
     icon1: faJsSquare,
     skill1: "Javascript",
     value1: 70,
@@ -13,25 +21,18 @@ const my_skills = [
     skill2: "React Js",
     value2: 70
   }, {
-    icon1: "icon",
-    skill1: "Javascript",
+    icon1: faNodeJs,
+    skill1: "Node Js",
     value1: 70,
-    icon2: "icon",
-    skill2: "Javascript",
+    icon2: faPhp,
+    skill2: "php",
     value2: 70
   }, {
-    icon1: "icon",
-    skill1: "Javascript",
+    icon1: faLaravel,
+    skill1: "Laravel",
     value1: 70,
-    icon2: "icon",
-    skill2: "Javascript",
-    value2: 70
-  }, {
-    icon1: "icon",
-    skill1: "Javascript",
-    value1: 70,
-    icon2: "icon",
-    skill2: "Javascript",
+    icon2: faReact,
+    skill2: "React native",
     value2: 70
   },
 ];
@@ -76,12 +77,12 @@ const MySkills = () => {
                   <>
                     <div>
                       <div style={{ width: '45%', fontSize: '2.2rem' }}>
-                        <FontAwesomeIcon icon={data.icon1} /> <span> {data.skill1} </span>
-                        <br /> <meter low="69" min="0" max="100" value={data.value1} style={{ width: "100%" }} ></meter>
+                        <FontAwesomeIcon icon={data.icon1} /> <span> {data.skill1} </span> <span style={{ float: "right", fontSize: '1.5rem', color: 'grey' }}> {data.value1}% </span>
+                        <br /> <meter min="0" max="100" value={data.value1} style={{ width: "100%" }} ></meter>
                       </div>
                       <div style={{ width: '45%', fontSize: '2.2rem' }}>
-                        <FontAwesomeIcon icon={data.icon2} /> <span> {data.skill2} </span>
-                        <br /> <meter low="69" min="0" max="100" value={data.value2} style={{ width: "100%" }} ></meter>
+                        <FontAwesomeIcon icon={data.icon2} /> <span> {data.skill2} </span> <span style={{ float: "right", fontSize: '1.5rem', color: 'grey' }}> {data.value1}% </span>
+                        <br /> <meter min="0" max="100" value={data.value2} style={{ width: "100%" }} ></meter>
                       </div>
                     </div>
                   </>
@@ -94,7 +95,7 @@ const MySkills = () => {
               {/* My Education Heading */}
 
               <div style={{ width: '100%', fontSize: '1.4em' }}>
-                <h1 style={{ textAlign: 'center', color: 'brown' }}> My Education </h1>
+                <h1 style={{ textAlign: 'center', color: 'brown' }}><FontAwesomeIcon icon={faGraduationCap} /> My Education </h1>
               </div>
 
               <hr style={{ margin: '1% 0%' }} />

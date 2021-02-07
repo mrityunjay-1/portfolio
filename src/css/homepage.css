@@ -86,9 +86,12 @@
 
 
 @media(max-width: 70rem){
+  .homepage-main-div{
+    justify-content: center;
+    align-items: center;
+  }
   .homepage-main-div-child-1{
     width: 100%;
-    padding: 30%;
   }
   .homepage-main-div-child-2{
     display: none;

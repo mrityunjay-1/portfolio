@@ -1,10 +1,10 @@
 import React from 'react';
-import HamarBihar from '../outside-components/HamarBihar';
+import MySkills from './MySkills';
 import lovelyplant from "../images/lovely-plant.png";
 import myimage from '../images/my_profie_img.jpg';
 import '../css/homepage.css';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-import cv from './cv-mrityunjay-kumar.pdf';
+import cv from '../images/cv-mrityunjay-kumar.pdf';
 import axios from 'axios';
 
 const HomePage = () => {
@@ -52,11 +52,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Hamar Bihar Section */}
-          {/* <div className="hamar-bihar">
-            <HamarBihar />
-          </div> */}
-
 
         </div>
         <div className="homepage-main-div-child-2">
@@ -65,7 +60,7 @@ const HomePage = () => {
 
 
       </div>
-
+      <MySkills />
     </>
   );
 };
