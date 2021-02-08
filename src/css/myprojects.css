@@ -1,0 +1,89 @@
+.my-projects-main-div{
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 254, 235);
+  padding: 2% 2%;
+  margin-top: -2%;
+  clip-path: polygon(0% 1%, 100% 0%, 100% 100%, 0% 100%);
+  
+}
+.my-projects-main-div-header{
+  background-color: rgb(255, 254, 235);
+  display: grid;
+  place-items: center;
+  padding: 1.5%;
+  position: sticky;
+  top: 0;
+}
+.my-projects-main-div-header h1{
+  color: brown;
+  font-size: 4rem;
+  
+}
+
+.my-projects-main-div-body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my-projects-main-div-body > div{
+  width: 100%;
+  height: auto;
+  
+}
+
+.project-card{
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0%;
+}
+.project-image-container{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+  scroll-snap-type: x mandatory;
+}
+.project-image-container::-webkit-scrollbar{
+  display: none;
+}
+
+.project-image-container > img{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  flex-shrink: 0;
+  padding: 2%;
+}
+
+.project-data-container{
+  padding: 5% 3% 5% 0%;
+  width: 80%;
+  
+}
+
+@media(max-width: 500px){
+  .my-projects-main-div{
+    clip-path: none;
+  }
+  .my-projects-main-div-body > div{
+    width: 100%;
+    height: auto;
+    
+  }
+  .project-card{
+    margin: 5% 0%;
+    padding: 5%;
+    flex-flow: column;
+    border: 0.1rem solid grey;
+    border-radius: 0.3rem;
+  }
+  .project-image-container{
+    width: 100%;
+    height: auto;
+  }
+  .project-data-container{
+    width: 100%;
+  }
+}

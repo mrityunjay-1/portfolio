@@ -6,21 +6,27 @@ import Page404 from './components/Page404';
 import './css/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCode, faProjectDiagram, faIdCard, faBars } from '@fortawesome/free-solid-svg-icons';
+import MyProjects from './components/MyProjects';
 
 const navLinks = [
   {
+    id: "navlink1011",
     icon: faHome,
     to: ""
   }, {
+    id: "navlink1022",
     icon: faCode,
     to: "skills"
   }, {
+    id: "navlink1033",
     icon: faProjectDiagram,
     to: "projects"
   }, {
+    id: "navlink1044",
     icon: faIdCard,
     to: "email"
   }, {
+    id: "navlink1055",
     icon: faIdCard,
     to: "contact me"
   },
@@ -83,12 +89,13 @@ const App = () => {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/portfolio" component={HomePage} />
             <Route exact path="/skills" component={MySkills} />
+            <Route exact path="/projects" component={MyProjects} />
             <Route exact path="/*" component={Page404} />
           </Switch>
         </div>
       </div>
 
-      <div className="hamburger" onClick={hideShow}> <FontAwesomeIcon icon={faBars} style={{ color: 'white', fontSize: '4.2rem', border: '0.1rem solid white', borderRadius: '0.1rem', padding: '15%' }} /> </div>
+      <div className="hamburger" onClick={hideShow}> <FontAwesomeIcon icon={faBars} style={{ color: 'white', fontSize: '4.2rem', border: '0.1rem solid white', backgroundColor: 'brown', borderRadius: '0.1rem', padding: '15%' }} /> </div>
 
     </>
   );

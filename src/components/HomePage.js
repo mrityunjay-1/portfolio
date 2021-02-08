@@ -1,6 +1,6 @@
 import React from 'react';
 import MySkills from './MySkills';
-import lovelyplant from "../images/lovely-plant.png";
+import MyProjects from './MyProjects';
 import myimage from '../images/my_profie_img.jpg';
 import '../css/homepage.css';
 import cv from '../images/cv-mrityunjay-kumar.pdf';
@@ -37,7 +37,7 @@ const HomePage = () => {
         <div className="homepage-main-div-child-1">
 
           <div className="center">
-            <img src={myimage} style={{ borderRadius: '8rem', width: '70%', filter: "drop-shadow(3px 3px 10px grey)" }} /> <br />
+            <img src={myimage} style={{ border: '0.5rem solid lightgrey', borderRadius: '8rem', width: '70%', filter: "drop-shadow(1px 1px 10px grey)" }} /> <br />
           </div>
 
           <div className="homepage-main-div-child-1-child-2">
@@ -52,16 +52,11 @@ const HomePage = () => {
               <div className="resume-icon" onClick={get_my_resume}> <FontAwesomeIcon icon={faDownload} /> </div>
             </div>
           </div>
-
-
         </div>
-        {/* <div className="homepage-main-div-child-2">
-          <img src={lovelyplant} style={{ filter: "drop-shadow(15px 0px 10px grey)", width: '100%', height: '100%' }} />
-        </div> */}
-
-
       </div>
+
       <MySkills />
+      <MyProjects />
     </>
   );
 };

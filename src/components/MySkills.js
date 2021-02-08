@@ -78,7 +78,7 @@ const MySkills = () => {
               my_skills.map((data) => {
                 return (
                   <>
-                    <div class="skills-div">
+                    <div className="skills-div">
                       <div style={{ fontSize: '2rem' }}>
                         <FontAwesomeIcon icon={data.icon1} /> <span> {data.skill1} </span> <span style={{ float: "right", fontSize: '1.4rem', color: 'grey' }}> {data.value1}% </span>
                         <br /> <div style={{ width: '100%', height: '1rem', border: '0.1rem solid grey', borderRadius: '2rem' }} > <div style={{ width: `${data.value1}%`, height: '100%', backgroundColor: 'green' }}></div> </div>
