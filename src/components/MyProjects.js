@@ -65,7 +65,7 @@ const MyProjects = () => {
     <>
       <div className="my-projects-main-div">
         {/* header */}
-        <div className="my-projects-main-div-header"> <h1> My Projects </h1> </div>
+        <div className="my-projects-main-div-header"> <h1> My Projects </h1> <div style={{ zIndex: '-999', position: 'absolute', width: '100%', height: '100%', background: 'rgba(255, 255, 255, 0.9)', filter: 'blur(8px)' }}></div> </div>
         {/* body */}
         <div className="my-projects-main-div-body">
           {
@@ -83,7 +83,7 @@ const MyProjects = () => {
                       <p> {data.discription} </p>
                       <div class="technology-used" style={{ display: 'flex', flexWrap: 'wrap' }}>
                         {
-                          data.technology_used.map((technology) => <h1 style={{ borderRadius: '0.5rem', padding: '1%', backgroundColor: 'lightgrey', margin: '0.5% 0.5%' }}> {technology} </h1>)
+                          data.technology_used.map((technology) => <h2 style={{ borderRadius: '0.5rem', padding: '1%', backgroundColor: 'lightgrey', margin: '0.5% 0.5%' }}> {technology} </h2>)
                         }
                       </div>
                       <div className="outside-links" style={{ marginTop: '2%' }}>

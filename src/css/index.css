@@ -28,7 +28,7 @@ body {
 
 .hamburger{
   position: absolute;
-  top: 1%;
+  top: 0.5%;
   left: 1%;
   font-size: 3rem;
   display: none;
@@ -172,7 +172,7 @@ body {
   .class-app-main-div-child-1{
     position: absolute;
     top: 0%; right: 0; bottom: 0; left: 0;
-    width: 55%;
+    width: 80%;
     padding: 20% 0%;
     z-index: 99999;
     display: none;

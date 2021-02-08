@@ -110,12 +110,12 @@ const MySkills = () => {
                       <>
                         <div>
                           <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', paddingTop: '2%' }}>
-                            <span style={{ border: '0.3rem solid blue', padding: '3%', color: 'white', backgroundColor: 'brown', borderRadius: '6rem', fontSize: '2.5rem' }}> <FontAwesomeIcon icon={data.icon} /> </span> <br />
-                            <span style={{ textShadow: '0.1rem 0.1rem 0.3rem lightgrey', fontSize: '2.2rem', fontWeight: 'bold', color: 'brown', textAlign: 'center' }}> {data.class} </span> <br />
+                            <span style={{ borderRadius: '0.3rem', backgroundColor: 'brown', /*textShadow: '0.1rem 0.1rem 0.3rem lightgrey',*/ padding: '3%', fontSize: '2.2rem', fontWeight: 'bold', color: 'white', textAlign: 'center' }}> {data.class} </span> <br />
+                            <span style={{ border: '0.3rem solid green', padding: '3%', color: 'white', backgroundColor: 'brown', borderRadius: '6rem', fontSize: '2.5rem' }}> <FontAwesomeIcon icon={data.icon} /> </span> <br />
                             <span style={{ textAlign: 'center', fontSize: '1.4rem', color: 'lightgrey' }}> {data.school} </span> <br />
                           </div>
                           <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center' }}>
-                            <span> {data.percentage} </span> <br />
+                            <span style={{ fontWeight: 'bold' }}> {data.percentage} </span> <br />
                             <span style={{ fontSize: '1rem', color: 'grey' }}> {data.year} </span>
                           </div>
                         </div>
