@@ -49,10 +49,10 @@ const App = () => {
 
   return (
     <>
-      <div class="my-svg"></div>
-      <div class="my-svg2"></div>
+
 
       <div className="class-app-main-div">
+
         {/* DIV - 1 Side Bar */}
 
         <div className="class-app-main-div-child-1">
@@ -77,6 +77,8 @@ const App = () => {
         {/* DIV - 2 main workspace */}
 
         <div className="class-app-main-div-child-2">
+          <div class="my-svg"></div>
+          <div class="my-svg2"></div>
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/portfolio" component={HomePage} />
