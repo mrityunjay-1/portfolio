@@ -12,15 +12,23 @@ body {
 }
 
 .my-svg{
-  z-index: -9999999999;
   position: absolute;
   width: 100%;
   height: 100vh;
   background-color: brown;
   clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%, 85% 50%);
 }
+
+.my-svg div{
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 5%;
+   right: 2%;
+}
+
 .my-svg2{
-  z-index: -9999999999;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -119,9 +127,13 @@ body {
   .my-svg{
     clip-path: polygon(100% 70%, 100% 100%, 0% 100%, 20% 80%);
   }
+  .my-svg div{
+    width: 40%;
+  }
   .my-svg2{
     background-color: brown;
     clip-path: polygon(0% 0%, 80% 0%, 15% 20%, 0% 30%);
+    /* z-index: -1; */
   }
   html{
     font-size: 50%;

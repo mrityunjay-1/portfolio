@@ -13,14 +13,17 @@ const navLinks = [
     id: "navlink1011",
     icon: faHome,
     to: ""
+    // to: "#home"
   }, {
     id: "navlink1022",
     icon: faCode,
     to: "skills"
+    // to: "#skills"
   }, {
     id: "navlink1033",
     icon: faProjectDiagram,
     to: "projects"
+    // to: "#projects"
   }, {
     id: "navlink1044",
     icon: faIdCard,
@@ -34,6 +37,7 @@ const navLinks = [
 
 
 const App = () => {
+
   // const [sideBar, setSideBar] = useState("jeevan");
 
   const hideShow = () => {
@@ -55,10 +59,7 @@ const App = () => {
 
   return (
     <>
-
-
       <div className="class-app-main-div">
-
         {/* DIV - 1 Side Bar */}
 
         <div className="class-app-main-div-child-1">
@@ -83,8 +84,7 @@ const App = () => {
         {/* DIV - 2 main workspace */}
 
         <div className="class-app-main-div-child-2">
-          <div class="my-svg"></div>
-          <div class="my-svg2"></div>
+
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/portfolio" component={HomePage} />
@@ -92,6 +92,7 @@ const App = () => {
             <Route exact path="/projects" component={MyProjects} />
             <Route exact path="/*" component={Page404} />
           </Switch>
+
         </div>
       </div>
 

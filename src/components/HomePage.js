@@ -7,6 +7,9 @@ import cv from '../images/cv-mrityunjay-kumar.pdf';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faHome, faCode, faProjectDiagram, faIdCard, faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 const HomePage = () => {
 
@@ -34,6 +37,17 @@ const HomePage = () => {
   return (
     <>
       <div className="homepage-main-div">
+        {/* top svg */}
+        <div class="my-svg2" id="svgid"></div>
+        {/* bottom one */}
+        <div class="my-svg" id="svgid">
+          <div>
+            <a href="mailto:kumarmrityunjay7034@gmail.com?Subject=Project" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faEnvelope} /> </a>
+            <a href="https://github.com/mrityunjay-1" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faGithub} /> </a>
+            <a href="https://www.linkedin.com/in/mrityunjay-kumar-a42908151" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faLinkedin} /> </a>
+            <a href="" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faTwitterSquare} /> </a>
+          </div>
+        </div>
         <div className="homepage-main-div-child-1">
 
           <div className="center">
