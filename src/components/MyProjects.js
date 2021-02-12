@@ -7,32 +7,36 @@ const my_projects = [
     name: "examscuriosity.com",
     discription: "A php based web application where a user can track and maintain daily based expense, a fare calculator and more stuff.",
     project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+      "https://github.com/mrityunjay-1/projects-images/blob/main/examscuriosity-site-image.png?raw=true",
+      "https://github.com/mrityunjay-1/projects-images/blob/main/examscuriosity-site-image2.png?raw=true",
+      "https://github.com/mrityunjay-1/projects-images/blob/main/examscuriosity-site-image3.png?raw=true"
     ],
     technology_used: ["php", "html", "css", "javascript"],
     live_demo: "https://examscuriosity.000webhostapp.com",
     source_code: "https://github.com/mrityunjay-1",
   }, {
     key: "project102",
-    name: "Task Manager",
-    discription: "Through this application user can manage tasks that completed or not.",
+    name: "Weather Checker",
+    discription: "Enter your city name and get the weather information right on your screen.",
     project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+      "https://github.com/mrityunjay-1/projects-images/blob/main/weather-app-img-2.png?raw=true",
+      "https://github.com/mrityunjay-1/projects-images/blob/main/weather-app-img-1.png?raw=true",
+      "https://github.com/mrityunjay-1/projects-images/blob/main/weather-app-img-3.png?raw=true"
     ],
-    technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
+    live_demo: "https://my-weather-application2.herokuapp.com/",
+    source_code: "https://github.com/mrityunjay-1/my-weather-application",
+    technology_used: ["Nodejs", "Expressjs", "Handlebars", "MapBox weather API"]
   }, {
     key: "project103",
-    name: "Expense Manager",
+    name: "Live Chat Application",
     project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+      "https://github.com/mrityunjay-1/projects-images/blob/main/live-chat-app-image2.png?raw=true",
+      "https://github.com/mrityunjay-1/projects-images/blob/main/live-chat-app-image3.png?raw=true",
+      "https://github.com/mrityunjay-1/projects-images/blob/main/live-chat-app-image1.png?raw=true"
     ],
-    technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
+    live_demo: "http://my-chat-application-mrityunjay.herokuapp.com/",
+    source_code: "https://github.com/mrityunjay-1/my-chat-application",
+    technology_used: ["Nodejs", "Expressjs", "socket.io", "Handlebars"]
   }, {
     key: "project104",
     name: "Expense Manager",
@@ -60,46 +64,48 @@ const my_projects = [
       "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
     ],
     technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
-  }, {
-    key: "project107",
-    name: "Expense Manager",
-    project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
-    ],
-    technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
-  }, {
-    key: "project108",
-    name: "Expense Manager",
-    project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
-    ],
-    technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
-  }, {
-    key: "project109",
-    name: "Expense Manager",
-    project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
-    ],
-    technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
-  }, {
-    key: "project110",
-    name: "Expense Manager",
-    project_images: [
-      "https://examscuriosity.000webhostapp.com/exa.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
-      "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
-    ],
-    technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
   }
+  // , {
+  //   key: "project107",
+  //   name: "Expense Manager",
+  //   project_images: [
+  //     "https://examscuriosity.000webhostapp.com/exa.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+  //   ],
+  //   technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
+  // }, {
+  //   key: "project108",
+  //   name: "Expense Manager",
+  //   project_images: [
+  //     "https://examscuriosity.000webhostapp.com/exa.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+  //   ],
+  //   technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
+  // }, {
+  //   key: "project109",
+  //   name: "Expense Manager",
+  //   project_images: [
+  //     "https://examscuriosity.000webhostapp.com/exa.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+  //   ],
+  //   technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
+  // }, {
+  //   key: "project110",
+  //   name: "Expense Manager",
+  //   project_images: [
+  //     "https://examscuriosity.000webhostapp.com/exa.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png",
+  //     "https://examscuriosity.000webhostapp.com/images/hanoitower.png"
+  //   ],
+  //   technology_used: ["Nodejs", "Expressjs", "mongoDB", "Handlebars"]
+  // }
 ];
 
 const MyProjects = () => {
+
   return (
     <>
       <div className="my-projects-main-div">

@@ -15,6 +15,10 @@ const navLinks = [
     to: ""
     // to: "#home"
   }, {
+    id: "navlink1044",
+    icon: faIdCard,
+    to: "about"
+  }, {
     id: "navlink1022",
     icon: faCode,
     to: "skills"
@@ -25,13 +29,9 @@ const navLinks = [
     to: "projects"
     // to: "#projects"
   }, {
-    id: "navlink1044",
-    icon: faIdCard,
-    to: "email"
-  }, {
     id: "navlink1055",
     icon: faIdCard,
-    to: "contact me"
+    to: "contact"
   },
 ];
 

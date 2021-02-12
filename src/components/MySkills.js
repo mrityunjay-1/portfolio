@@ -40,21 +40,21 @@ const my_skills = [
 // my education - json data
 const my_education = [
   {
-    icon: faSchool,
+    college_logo: "data:image/jpeg;base64,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",
     class: "Matriculation",
-    percentage: "Percentage - 76.8%",
+    percentage: "Percentage : 76.8%",
     school: "NBS Mills High School, Bagaha - Bihar",
     year: 2015
   }, {
-    icon: faSchool,
-    class: "Intermidiate in Science",
-    percentage: "Percentage - 75.4%",
+    college_logo: "https://th.bing.com/th/id/OIP.h2ByD1PygK4OGEDS7owDdwHaFj?pid=ImgDet&rs=1",
+    class: "Intermediate in Science",
+    percentage: "Percentage : 75.4%",
     school: "Munshi Singh College, Motihari - Bihar",
     year: 2017
   }, {
-    icon: faUniversity,
+    college_logo: "https://www.careerindia.com/img/2014/08/28-lovelyprofessionaluniversity.jpg",
     class: "B.Tech. - (Computer Science & Engineering)",
-    percentage: "CGPA - 7.52",
+    percentage: "CGPA : 7.66",
     school: "Lovely Professional University, Phagwara - Punjab",
     year: 2022
   }
@@ -111,7 +111,7 @@ const MySkills = () => {
                         <div>
                           <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', paddingTop: '2%' }}>
                             <span style={{ borderRadius: '0.3rem', backgroundColor: 'brown', /*textShadow: '0.1rem 0.1rem 0.3rem lightgrey',*/ padding: '3%', fontSize: '2.2rem', fontWeight: 'bold', color: 'white', textAlign: 'center' }}> {data.class} </span> <br />
-                            <span style={{ border: '0.3rem solid green', padding: '3%', color: 'white', backgroundColor: 'brown', borderRadius: '6rem', fontSize: '2.5rem' }}> <FontAwesomeIcon icon={data.icon} /> </span> <br />
+                            <span style={{}}> {/*<FontAwesomeIcon icon={data.icon} /> */} <img src={data.college_logo} style={{ borderRadius: '6rem', width: 'auto', height: '8rem' }} /> </span> <br />
                             <span style={{ textAlign: 'center', fontSize: '1.4rem', color: 'lightgrey' }}> {data.school} </span> <br />
                           </div>
                           <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center' }}>

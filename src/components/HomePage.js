@@ -42,10 +42,10 @@ const HomePage = () => {
         {/* bottom one */}
         <div class="my-svg" id="svgid">
           <div>
-            <a href="mailto:kumarmrityunjay7034@gmail.com?Subject=Project" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faEnvelope} /> </a>
-            <a href="https://github.com/mrityunjay-1" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faGithub} /> </a>
-            <a href="https://www.linkedin.com/in/mrityunjay-kumar-a42908151" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faLinkedin} /> </a>
-            <a href="" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem', color: 'white' }} icon={faTwitterSquare} /> </a>
+            <a href="mailto:kumarmrityunjay7034@gmail.com?Subject=Project" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faEnvelope} /> </a>
+            <a href="https://github.com/mrityunjay-1" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faGithub} /> </a>
+            <a href="https://www.linkedin.com/in/mrityunjay-kumar-a42908151" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faLinkedin} /> </a>
+            <a href="" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faTwitterSquare} /> </a>
           </div>
         </div>
         <div className="homepage-main-div-child-1">
@@ -62,7 +62,7 @@ const HomePage = () => {
             <div></div>
 
             <div className="resume-button-container">
-              <button className="resume-button" onClick={get_my_resume}> <span> Resume </span> <span>&nbsp;  </span></button>
+              <button className="resume-button" onClick={get_my_resume}> <span className="resume-text"> Resume </span> <span>&nbsp;  </span></button>
               <div className="resume-icon" onClick={get_my_resume}> <FontAwesomeIcon icon={faDownload} /> </div>
             </div>
           </div>
