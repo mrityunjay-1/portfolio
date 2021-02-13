@@ -1,6 +1,8 @@
 import React from 'react';
 import MySkills from './MySkills';
 import MyProjects from './MyProjects';
+import ContactMe from './ContactMe';
+
 import myimage from '../images/my_profie_img.jpg';
 import '../css/homepage.css';
 import cv from '../images/cv-mrityunjay-kumar.pdf';
@@ -71,6 +73,7 @@ const HomePage = () => {
 
       <MySkills />
       <MyProjects />
+      <ContactMe />
     </>
   );
 };

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Switch, NavLink, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import MySkills from './components/MySkills';
+import ContactMe from './components/ContactMe';
 import Page404 from './components/Page404';
+
 import './css/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCode, faProjectDiagram, faIdCard, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -90,6 +92,7 @@ const App = () => {
             <Route exact path="/portfolio" component={HomePage} />
             <Route exact path="/skills" component={MySkills} />
             <Route exact path="/projects" component={MyProjects} />
+            <Route exact path="/contact" component={ContactMe} />
             <Route exact path="/*" component={Page404} />
           </Switch>
 
