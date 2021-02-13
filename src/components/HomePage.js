@@ -10,7 +10,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faHome, faCode, faProjectDiagram, faIdCard, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 const HomePage = () => {
