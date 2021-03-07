@@ -110,7 +110,7 @@ const MyProjects = () => {
     <>
       <div className="my-projects-main-div">
         {/* header */}
-        <div className="my-projects-main-div-header"> <h1> My Projects </h1> <div style={{ zIndex: '-999', position: 'absolute', width: '100%', height: '100%', background: 'rgba(255, 255, 255, 0.9)', filter: 'blur(8px)' }}></div> </div>
+        <div className="my-projects-main-div-header"> <h1 style={{ textShadow: "0.2rem 0.1rem 0.5rem lightgrey" }}> My Projects </h1> <div style={{ zIndex: '-999', position: 'absolute', width: '100%', height: '100%', background: 'rgba(255, 255, 255, 0.9)', filter: 'blur(8px)' }}></div> </div>
         {/* body */}
         <div className="my-projects-main-div-body">
           {

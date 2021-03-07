@@ -9,31 +9,31 @@ const my_skills = [
   {
     icon1: faHtml5,
     skill1: "HTML",
-    value1: 70,
+    value1: 80,
     icon2: faCss3Alt,
     skill2: "css",
     value2: 70
   }, {
     icon1: faJsSquare,
     skill1: "Javascript",
-    value1: 70,
+    value1: 75,
     icon2: faReact,
     skill2: "React Js",
-    value2: 70
+    value2: 80
   }, {
     icon1: faNodeJs,
     skill1: "Node Js",
-    value1: 70,
+    value1: 80,
     icon2: faPhp,
     skill2: "php",
-    value2: 70
+    value2: 75
   }, {
     icon1: faLaravel,
     skill1: "Laravel",
-    value1: 70,
+    value1: 75,
     icon2: faReact,
     skill2: "React native",
-    value2: 70
+    value2: 80
   },
 ];
 
@@ -68,7 +68,7 @@ const MySkills = () => {
         <div className="myskills-main-div">
           <div className="myskills-main-div-header">
             <p style={{ textAlign: 'center', color: 'black' }} > why choose me </p> <br />
-            <h1 style={{ textAlign: 'center' }}> My Expertise Area </h1>
+            <h1 style={{ textAlign: 'center', textShadow: "0.2rem 0.1rem 0.5rem lightgrey" }}> My Expertise Area </h1>
           </div>
           <hr style={{ margin: '1% 0%' }} />
 
@@ -97,7 +97,7 @@ const MySkills = () => {
               {/* My Education Heading */}
 
               <div style={{ width: '100%', fontSize: '1.4em' }}>
-                <h1 style={{ textAlign: 'center', color: 'brown' }}><FontAwesomeIcon icon={faGraduationCap} /> My Education </h1>
+                <h1 style={{ textShadow: "0.2rem 0.1rem 0.5rem lightgrey", textAlign: 'center', color: 'brown' }}><FontAwesomeIcon icon={faGraduationCap} /> My Education </h1>
               </div>
 
               <hr style={{ margin: '1% 0%' }} /> <br /><br />

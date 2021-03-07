@@ -47,7 +47,7 @@ const HomePage = () => {
             <a href="mailto:kumarmrityunjay7034@gmail.com?Subject=Project" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faEnvelope} /> </a>
             <a href="https://github.com/mrityunjay-1" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faGithub} /> </a>
             <a href="https://www.linkedin.com/in/mrityunjay-kumar-a42908151" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faLinkedin} /> </a>
-            <a href="" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faTwitterSquare} /> </a>
+            <a href="https://twitter.com/Mrityun69724268?s=09" style={{ padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faTwitterSquare} /> </a>
           </div>
         </div>
         <div className="homepage-main-div-child-1">

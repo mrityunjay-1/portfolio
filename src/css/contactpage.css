@@ -1,13 +1,18 @@
 .header-div{
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid rgb(167, 165, 165);
   background-color: white;
   font-size: 2rem;
   color: brown;
   display: grid;
   place-items: center;
   padding: 1.2%;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  height: 12vh;
 }
 input, textarea{
+  color: rgb(78, 56, 56);
   width: 100%;
   padding: 1.3%;
   font-size: 1.6rem;
@@ -21,23 +26,23 @@ textarea{
 }
 
 input:focus, textarea:focus {
-  box-shadow: 0.0rem 0.0rem 0.0rem 0.3rem rgba(165, 42, 42, 0.452);
+  box-shadow: 0.0rem 0.0rem 0.0rem 0.3rem rgba(165, 42, 42, 0.452);  /* border outline looks like bootstrap */
 }
 
 .contact-page-main-div{
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 1% 0%;
+  justify-content: center;
 }
 
 .contact-page-main-div-child-1{
   width: 60%;
   display: flex;
   justify-content: center;
-  /* border: 0.05rem solid grey; */
+  align-items: center;
 }
 
 .contact-page-main-div-child-2{
@@ -48,7 +53,7 @@ input:focus, textarea:focus {
 }
 
 .field-title{
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 1% 0%;
 }
 
@@ -82,27 +87,9 @@ input:focus, textarea:focus {
   }
 }
 
-
-.notification{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 10%;
-  right: 0%;
-  background-color: rgba(15, 7, 7, 0.567);
-  display: none;
-  place-items: center;
-  animation: anim12 1s ease-in; 
-}
-
-@keyframes anim12{
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(1.5);
-  }
+#toast{
+  transition: all 0.5s linear;
+  background-color: green;
+  border-top-left-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
