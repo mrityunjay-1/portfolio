@@ -29,17 +29,34 @@ const reducer = (state, action) => {
 const ContactMe = () => {
   const [form, dispatch] = useReducer(reducer, [{ name: "" }, { email: "" }, { subject: "" }, { message: "" }]);
 
+  async function sendData() {
 
-  function sendData() {
-    // data validation and data sanitization
+    document.querySelector("#toast_message").innerHTML = "Thankyou for contacting me.";
+    document.querySelector("#toast").style.bottom = "10%";
 
     try {
-      // const res = axios.post("/portfolio_contact_me_form", form);
-      // console.log(res.data);
-      document.querySelector("#toast").style.bottom = "10%";
+      let name = form[0].name;
+      let email = form[1].email;
+      let subject = form[2].subject;
+      let message = form[3].message;
+
+
+      // validation 
+      if (name === "" || email === "" || subject === "" || message === "") {
+        throw new Error("please Fill all the details");
+      }
+
+
+      const res = await axios.post("http://localhost:8080/portfolio_contact", {
+        name, email, subject, message
+      });
+      console.log(res.data);
 
     } catch (e) {
-      console.log(e.message);
+      document.querySelector("#toast_message").innerHTML = e.message;
+      document.querySelector("#toast").style.backgroundColor = 'red';
+      document.querySelector("#toast").style.bottom = "10%";
+      console.log("Error = ", e.message);
     }
 
     setTimeout(() => {
@@ -54,7 +71,7 @@ const ContactMe = () => {
 
         <div style={{ position: 'relative', overflow: 'hidden', backgroundImage: 'linear-gradient(lightyellow, yellow)', width: '100%', height: '100vh' }}>
 
-          <div id="toast" style={{ width: 'auto', zIndex: 99999, position: 'absolute', bottom: '-50%', right: '60%' }}> <h1 style={{ padding: '10%', fontSize: '2rem', color: 'white' }}> Thankyou so much for contacting me. </h1> </div>
+          <div id="toast" style={{ width: 'auto', zIndex: 99999, position: 'absolute', bottom: '-50%', right: '60%' }}> <h1 style={{ padding: '10%', fontSize: '2rem', color: 'white' }} id="toast_message"> Thankyou so much for contacting me. </h1> </div>
 
 
           {/* header */}
@@ -88,15 +105,6 @@ const ContactMe = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="contact-page-main-div-child-2">
-            <div style={{ width: '30rem', justifyContent: 'center', display: 'flex', borderTop: '0.1rem solid brown', margin: '3% 0%' }}>
-              <a href="mailto:kumarmrityunjay7034@gmail.com?Subject=Project" style={{ color: 'blue', padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faEnvelope} /> </a>
-              <a href="https://github.com/mrityunjay-1" style={{ color: 'blue', padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faGithub} /> </a>
-              <a href="https://www.linkedin.com/in/mrityunjay-kumar-a42908151" style={{ color: 'blue', padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faLinkedin} /> </a>
-              <a href="" style={{ color: 'blue', padding: '4%' }} target="_blank"> <FontAwesomeIcon style={{ padding: '2%', fontSize: '3.5rem' }} icon={faTwitterSquare} /> </a>
-            </div>
-          </div> */}
           </div>
         </div>
       </div>
