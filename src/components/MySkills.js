@@ -84,7 +84,7 @@ const MySkills = () => {
                         <br /> <div style={{ width: '100%', height: '1rem', border: '0.1rem solid grey', borderRadius: '2rem' }} > <div style={{ width: `${data.value1}%`, height: '100%', backgroundColor: 'green' }}></div> </div>
                       </div>
                       <div style={{ fontSize: '2.2rem' }}>
-                        <FontAwesomeIcon icon={data.icon2} /> <span> {data.skill2} </span> <span style={{ float: "right", fontSize: '1.4rem', color: 'grey' }}> {data.value1}% </span>
+                        <FontAwesomeIcon icon={data.icon2} /> <span> {data.skill2} </span> <span style={{ float: "right", fontSize: '1.4rem', color: 'grey' }}> {data.value2}% </span>
                         <br /> <div style={{ width: '100%', height: '1rem', border: '0.1rem solid grey', borderRadius: '2rem' }} > <div style={{ width: `${data.value2}%`, height: '100%', backgroundColor: 'green' }}></div> </div></div>
                     </div>
                   </>
