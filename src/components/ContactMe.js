@@ -47,7 +47,7 @@ const ContactMe = () => {
       }
 
 
-      const res = await axios.post("http://localhost:8080/portfolio_contact", {
+      const res = await axios.post("https://mrityunjaysauthsystem.herokuapp.com/portfolio_contact", {
         name, email, subject, message
       });
       console.log(res.data);
