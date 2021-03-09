@@ -1,5 +1,6 @@
 import React from 'react';
 import MySkills from './MySkills';
+import AboutMe from './AboutMe';
 import MyProjects from './MyProjects';
 import ContactMe from './ContactMe';
 
@@ -71,6 +72,7 @@ const HomePage = () => {
         </div>
       </div>
 
+      <AboutMe />
       <MySkills />
       <MyProjects />
       <ContactMe />

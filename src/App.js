@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, NavLink, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import AboutMe from './components/AboutMe';
 import MySkills from './components/MySkills';
 import ContactMe from './components/ContactMe';
 import Page404 from './components/Page404';
@@ -19,17 +20,15 @@ const navLinks = [
   }, {
     id: "navlink1044",
     icon: faIdCard,
-    to: "about"
+    to: "aboutme"
   }, {
     id: "navlink1022",
     icon: faCode,
     to: "skills"
-    // to: "#skills"
   }, {
     id: "navlink1033",
     icon: faProjectDiagram,
     to: "projects"
-    // to: "#projects"
   }, {
     id: "navlink1055",
     icon: faIdCard,
@@ -93,6 +92,7 @@ const App = () => {
             <Route exact path="/skills" component={MySkills} />
             <Route exact path="/projects" component={MyProjects} />
             <Route exact path="/contact" component={ContactMe} />
+            <Route exact path="/aboutme" component={AboutMe} />
             <Route exact path="/*" component={Page404} />
           </Switch>
 
